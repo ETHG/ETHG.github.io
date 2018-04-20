@@ -12,14 +12,15 @@
   <div class="navbar">
     <a href="index.html">Home</a>
     <div class="dropdown">
-      <button class="dropbtn" onclick="myFunction()">General Info
+      <button class="dropbtn" onclick="showDropDown()">General Info
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content" id="myDropdown">
-        <a href="history.html">History</a>
-        <a href="#ProstheticsToday.html">Today</a>
+        <a href="History.html">History</a>
+        <a href="ProstheticsToday.html">Today</a>
       </div>
     </div>
+    <a href='#'>BioEthics
     <a href="#">Interactive</a>
     <a href="#">About</a>
   </div>
@@ -27,7 +28,7 @@
   <p>This is my BioExpo 2018 page! </p>
   
   <script>
-    function myFunction() {
+    function showDropDown() {
         document.getElementById("myDropdown").classList.toggle("show");
     }
 

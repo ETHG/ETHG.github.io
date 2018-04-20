@@ -8,16 +8,37 @@
   </head>
 <body>
   <h1>History</h1>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="History.html">History</a></li>
-    <li><a href="ProstheticsToday.html">Current State</a></li>
-    <li><a href="contact.asp">Bioethics</a></li>
-    <li><a href="about.asp">Interactive1</a></li>
-    <li><a href="about.asp">Interactive2</a></li>
-    <li><a href="about.asp">About</a></li>
-  </ul>
+    <div class="navbar">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="showDropDown()">General Info
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="History.html">History</a>
+        <a href="ProstheticsToday.html">Today</a>
+      </div>
+    </div>
+    <a href='#'>BioEthics
+    <a href="#">Interactive</a>
+    <a href="#">About</a>
+  </div>
   <p>In the past, prosthetics have taken many forms. Until the early 1500s, prosthetics were usually made of mostly wood, bronze, or copper. They were mostly peg legs, hooks, or hands and feet made to emulate real ones. None of these were able to move independently from the rest of the limb. In the 1500s, the first leather prosthetics were introduced. There were also prosthetics with joints and prosthetic hands that could be manipulated by the other hand. At this point, harnesses used to attach the prosthetic to the limb were introduced. Then, in the 1800s some basic manipulatable prosthetics were made. These had springs that simulated tendon-like movement. In 1912, the first aluminum prosthetic was made. After the Civil War, and World War I, the need for prosthetics became much greater. Because of this, prosthetic technology greatly improved, making it closer to what it is today.</p>
   <p></p>
+      
+  <script>
+    function showDropDown() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+      }
+    }
+  </script>
 </body>
 </html>

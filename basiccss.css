@@ -1,37 +1,100 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" type="text/css" href="basiccss.css">
-  <title>Prosthetics & The Brain</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Main page of pros">
-</head>
-<body>
-  <h1>Prosthetics And Their Interaction With The Human Brain</h1>
+/* input {
+  float: left;
+  background-color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  border: 2px solid #4CAF50;
+}
 
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><div class="general">
-      <button class="general">General Info
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="History.html">History</a>
-        <a href="ProstheticsToday.html">Current State</a>
-    </div></li>
-    <li><div class="ethics">
-      <button class="ethics">Bioethics
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="History.html">General</a>
-        <a href="ProstheticsToday.html">Access</a>
-      </div></li>
-    <li><a href="about.asp">Interactive1</a></li>
-    <li><a href="about.asp">About</a></li>
-  </ul>
+input:hover {
+  background-color: #4CAF50;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+} */
 
-  <p>This is my BioExpo 2018 page! </p>
 
-</body>
-</html>
+ul {
+    position: sticky;
+    top: 0;
+    width: 100%;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}

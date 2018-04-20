@@ -9,18 +9,40 @@
 <body>
   <h1>Prosthetic Today</h1>
   
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="History.html">History</a></li>
-    <li><a href="ProstheticsToday.html">Current State</a></li>
-    <li><a href="contact.asp">Bioethics</a></li>
-    <li><a href="about.asp">Interactive1</a></li>
-    <li><a href="about.asp">Interactive2</a></li>
-    <li><a href="about.asp">About</a></li>
-  </ul>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="showDropDown()">General Info
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="History.html">History</a>
+        <a href="ProstheticsToday.html">Today</a>
+      </div>
+    </div>
+    <a href='#'>BioEthics
+    <a href="#">Interactive</a>
+    <a href="#">About</a>
+  </div>
   
   <p>Today, prosthetics are made out of mostly out of plastics, aluminum, and composites. Thanks to modern robotics and neurosciences, prosthetics are evolving into very advanced machines, which have the potential to be controlled by the brain. The brain can also use the prosthetics to feel, similar to a real body part.</p>
   <p>In early 2016, biomedical engineers from John Hopkins Medicine were able to successfully remap a person's brain to control a prosthetic hand for the first time ever (McMains, 2016). With this method, the person was able to move individual fingers of the prosthetic hand, instead of his own hand. To do this the researchers did preliminary brain mapping to find out what parts of his brain controlled individual fingers. They then inserted a series of 128 electrode sensors in these certain parts of this brain. Initially, this method had 76% accuracy. They then tried coupling the pinkie and the ring finger because most people move them together anyways. This made the accuracy level jump up to 88%, meaning 88% he could move the fingers as prompted. The whole experiment took under two hours and took no prior training. This would be a major leap in prosthetics and how a disabled person navigates life. However, the biomedical engineers that conducted this experiment say it is still far off as a public treatment option.</p>
   <p>These advances are revolutionary; however, the previously discussed prosthetic hand is very different from a natural hand in one key way--feel. This hand can’t take sensory input. This relates to another study, conducted by Defense Advanced Research Projects Agency (DARPA - who were contracted by the US government to work on prosthetics after WWI and have continued to this day). In this study, DARPA placed an array similar to that from the previous study in their test subject’s brain (Sanchez, 2015). This time, they reprogrammed it so that he could feel which mechanical finger was being touched. They then blindfolded him and touched individual fingers. He could tell which finger was being touched with almost 100% accuracy. Later, they even tried touching two fingers without telling him first. He realized and asked them if they were playing a trick on him. This level of accuracy in feeling from a prosthetic is important, not only important in having it feel natural, but also to give the hand and the brain the sensory input it needs to perform precise movements and tasks.</p>
+
+<script>
+    function showDropDown() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+      }
+    }
+  </script>
+    
 </body>
 </html>

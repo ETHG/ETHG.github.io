@@ -41,6 +41,6 @@ li a:hover {
     background-color: #111;
 }
 
-.active {
+li a.active {
     background-color: #4CAF50;
 }

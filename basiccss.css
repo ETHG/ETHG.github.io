@@ -1,46 +1,37 @@
-/* input {
-  float: left;
-  background-color: white;
-  font-size: 15px;
-  border-radius: 5px;
-  transition-duration: 0.4s;
-  border: 2px solid #4CAF50;
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="basiccss.css">
+  <title>Prosthetics & The Brain</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Main page of pros">
+</head>
+<body>
+  <h1>Prosthetics And Their Interaction With The Human Brain</h1>
 
-input:hover {
-  background-color: #4CAF50;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-} */
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><div class="general">
+      <button class="general">General Info
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="History.html">History</a>
+        <a href="ProstheticsToday.html">Current State</a>
+    </div></li>
+    <li><div class="ethics">
+      <button class="ethics">Bioethics
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="History.html">General</a>
+        <a href="ProstheticsToday.html">Access</a>
+      </div></li>
+    <li><a href="about.asp">Interactive1</a></li>
+    <li><a href="about.asp">About</a></li>
+  </ul>
 
+  <p>This is my BioExpo 2018 page! </p>
 
-ul {
-    position: sticky;
-    top: 0;
-    width: 100%;
-
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111;
-}
-
-li a.active {
-    background-color: #4CAF50;
-}
+</body>
+</html>

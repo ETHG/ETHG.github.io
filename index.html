@@ -9,27 +9,29 @@
 <body>
   <h1>Prosthetics And Their Interaction With The Human Brain</h1>
 
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><div class="general">
-      <button class="general">General Info
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="myFunction()">General Info
         <i class="fa fa-caret-down"></i>
       </button>
-      <div class="dropdown-content">
-        <a href="History.html">History</a>
-        <a href="ProstheticsToday.html">Current State</a>
-    </div></li>
-    <li><div class="ethics">
-      <button class="ethics">Bioethics
+      <div class="dropdown-content" id="myDropdown">
+        <a href="history.html">History</a>
+        <a href="#ProstheticsToday.html">Today</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="myFunction()">BioEthics
         <i class="fa fa-caret-down"></i>
       </button>
-      <div class="dropdown-content">
-        <a href="History.html">General</a>
-        <a href="ProstheticsToday.html">Access</a>
-      </div></li>
-    <li><a href="about.asp">Interactive1</a></li>
-    <li><a href="about.asp">About</a></li>
-  </ul>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="#">Ethics</a>
+        <a href="#">Access</a>
+      </div>
+    </div>
+    <a href="#">Interactive</a>
+    <a href="#">About</a>
+  </div>
 
   <p>This is my BioExpo 2018 page! </p>
 

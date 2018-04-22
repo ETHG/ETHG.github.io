@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="basiccss.css">
+  <title>Annotated Bibliography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A brief history of prosthetics">
+  </head>
+<body>
+  <h1>Prosthetics and the Brain</h1>
+    <div class="navbar">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="showGeneralDropDown()">General Info
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="general.html">General</a>
+        <a href="History.html">History</a>
+        <a href="ProstheticsToday.html">Today</a>
+        <a href="Application.html">Application</a>
+        <a href="Conclusion.html">Conclusion</a>
+      </div>
+    </div>
+    <a href="bioethics.html">BioEthics</a>
+    <a href="bioethics.html">Interactive</a>
+    <a href="annotatedBib.html" >Bibliography</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <h2>Annotated Bibliography</h2>
+  <p></p>
+  <h3>McMains, Vanessa. "Mind-Controlled Prosthetic Arm Moves Individual 'Fingers'." Johns Hopkins Medicine, 5 Feb. 2016. Web.</h3>
+  <blockquote>This article explains how researchers were able to attach a prosthetic hand to a person. This man already had a hand, but scientists were able to override the hand and remap the brain to control the prosthetic hand. This is relevant and helpful to my project because it informs me about how controlling a prosthetic works - by remapping the brain. This source is credible because it comes from a well respected hospital that also runs a school of medicine. </blockquote>
+  <h3>"Neurotechnology Provides Near-Natural Sense of Touch." Defense Advanced Research Projects Agency. N.p., 11 Nov. 2015. Web.</h3>
+  <blockquote>Researchers at DARPA where able to get a paralysed person to feel individual prosthetic fingers. They did this by placing an array of electrodes in the sensory cortex of the test subject. This source is relevant and helpful to my project because it shows that using brain stimulation, prothstetics can function based on brain signals, but can also send signals of feeling to the brain. I know this source is credible because it is widely accepted as a breakthrough in prosthetic research by the scientific community.</blockquote>
+  <h3>"First Prosthesis in the World with Direct Connection to Bone, Nerves and Muscles." ScienceDaily. N.p., 14 Mar. 2016. Web.</h3>
+  <blockquote>This article explains that the first prosthetic which connects to the bones, nerves, and muscles, functioning very similarly to an actual arm. It does this using an electrodes system, and a titanium implant. This source is useful and relevant to my topic because it demonstrates how touch and control can combine to make a very useful prosthetic. I know this source is reliable because the study was backed by a major mexican research organization.</blockquote>
+  <h3>Norton, Kim M. “A Brief History of Prosthetics.” Amputee Coalition, Nov. 2007.</h3>
+  <blockquote>This article explains the history of prosthetics, starting with peg legs & hooks, to the present advanced prosthetics, although it provides limited resources on the present, this source is useful because it helps us to understand prosthetics in the past. I know this source is reliable because it is published on the site of a reputable non-profit organization focusing on prosthetics.</blockquote>
+  <h3>VanNostrand, Cole. "Prosthetics: The Ethical Issues Surrounding Them." University of Pittsburgh, 28 Oct. 2014. Web.</h3>
+  <blockquote>This article explains some ethical issues surrounding prosthetics, including a good explanation of what ethics means in this case. This is useful to help me understand and see perspectives on ethical dilemmas within this field. I know this source is reliable because it comes from a reputable university. </blockquote>
+  <script>
+    function showGeneralDropDown() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+      }
+    }
+  </script>
+</body>
+</html>

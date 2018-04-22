@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="basiccss.css">
+  <title>Prosthetics and the Brain</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A brief description of the current state of prosthetics.">
+</head>
+<body>
+  <h1>Prosthetics and the Brain</h1>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="showGeneralDropDown()">General Info
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="general.html">General</a>
+        <a href="History.html">History</a>
+        <a href="ProstheticsToday.html">Today</a>
+        <a href="Application.html">Application</a>
+        <a href="Conclusion.html">Conclusion</a>
+      </div>
+    </div>
+    <a href="bioethics.html">BioEthics</a>
+    <a href="bioethics.html">Interactive</a>
+    <a href="annotatedBib.html" >Bibliography</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <h1>Application</h1>
+  <p>   After the first experiment was conducted, it led to another question. How can this be applied? The next month, in March 2016, an attempt to answer this was made. This experiment was created by Ortiz Catalan, in 2016. It combined the technology from the previous two studies to create a prosthetic that is as natural as possible. To do this, they developed another important technology, allowing the prosthetic to be connected to the bone, the nerves, and the tendons. To do this, they gave the man surgery to setup a titanium implant to connect the bone to the prosthetic and to setup electrodes to connect the muscles and the nerves to the prosthetic. They then installed it. This all resulted in making a very natural prosthetic, which had a permanent arm, tactile feedback, and could be controlled by the brain. The only drawback to this treatment is minor discomfort in the arm, which is claimed to be minor compared to the gains. Dr. Ortiz Catalan, one of the researchers involved in this study, says that he hopes this will become standard treatment, and eventually the prices will fall (Catalan, 2016). </p>
+
+<script>
+    function showGeneralDropDown() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+      }
+    }
+  </script>
+
+</body>
+</html>

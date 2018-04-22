@@ -12,25 +12,30 @@
   <div class="navbar">
     <a href="index.html">Home</a>
     <div class="dropdown">
-      <button class="dropbtn" onclick="showDropDown()">General Info
+      <button class="dropbtn" onclick="showGeneralDropDown()">General Info
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content" id="myDropdown">
+        <a href="general.html">General</a>
         <a href="History.html">History</a>
         <a href="ProstheticsToday.html">Today</a>
+        <a href="Application.html">Application</a>
+        <a href="Conclusion.html">Conclusion</a>
       </div>
     </div>
-    <a href='#'>BioEthics
-    <a href="#">Interactive</a>
-    <a href="#">About</a>
+    <a href="bioethics.html">BioEthics </a>
+    <a href="bioethics.html">Interactive</a>
+    <a href="annotatedBib.html" >Bibliography</a>
+    <a href="about.html">About</a>
   </div>
 
   <p>This is my BioExpo 2018 page! </p>
-  
+
   <script>
-    function showDropDown() {
+    function showGeneralDropDown() {
         document.getElementById("myDropdown").classList.toggle("show");
     }
+
 
     // Close the dropdown if the user clicks outside of it
     window.onclick = function(e) {
@@ -41,6 +46,8 @@
           }
       }
     }
+
+
   </script>
 
 </body>

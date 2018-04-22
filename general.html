@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="basiccss.css">
+  <title>Prosthetics and the Brain</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A brief description of the current state of prosthetics.">
+</head>
+<body>
+  <h1>Prosthetics and the Brain</h1>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="showGeneralDropDown()">General Info
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="general.html">General</a>
+        <a href="History.html">History</a>
+        <a href="ProstheticsToday.html">Today</a>
+        <a href="Application.html">Application</a>
+        <a href="Conclusion.html">Conclusion</a>
+      </div>
+    </div>
+    <a href="bioethics.html">BioEthics</a>
+    <a href="bioethics.html">Interactive</a>
+    <a href="annotatedBib.html" >Bibliography</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <h1>General</h1>
+  <p>   Everyone deserves a chance. Everyone deserves a chance to run a marathon, win a bike race, or at the very least do day to day tasks with ease. But, this isn’t so easy for everyone. Some are unfortunate enough to not have certain limbs, and therefore, need prosthetics to get these chances. The field of prosthetics is a very rapidly evolving one. Recently, there have been many innovations in the field of prosthetics. The most notable of these being brain interaction. Now, technology is being developed so that a person can not only control a prosthetic limb with their brain, but also feel things with prosthetic as if it was their own. This paper will cover what prosthetics are, what they have been like in the past, and what they are like today. </p>
+  <p>   According to the Oxford Dictionary, prosthetic means “Denoting an artificial body part, such as a limb, a heart, or a breast implant.” This paper will mostly be referring to limbs such as arms and legs and parts of limbs such as hands and feet. </p>
+
+  <h3> To keep reading, select other sections from the dropdown menu or read the whole paper <a href='background.html'> here.<a></h3>
+
+<script>
+    function showGeneralDropDown() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+      }
+    }
+  </script>
+
+</body>
+</html>

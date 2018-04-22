@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="basiccss.css">
+  <title>Prosthetics and The Brain</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Main page of pros">
+</head>
+<body>
+  <h1>Prosthetics And Their Interaction With The Human Brain</h1>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="showGeneralDropDown()">General Info
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="general.html">General</a>
+        <a href="History.html">History</a>
+        <a href="ProstheticsToday.html">Today</a>
+        <a href="Application.html">Application</a>
+        <a href="Conclusion.html">Conclusion</a>
+      </div>
+    </div>
+    <a href="bioethics.html">BioEthics</a>
+    <a href="bioethics.html">Interactive</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <h2>BioEthics Paper:</h2>
+  <p>	The term “advanced prosthetics” sounds great, right? But in a world where these prosthetics are advancing so rapidly, they have dangerous potential. As seen in many science fiction movies, the idea of a cyborg, is beginning to look more and more realistic. Because of this, we must be very careful about bioethics in the field of prosthetics. Bioethics must consider who should have access and what is a valid reason for access. For example, there is potential for them to be abused in many fields because prosthetics don’t get tired, at least not in a traditional sense. Bioethicists must discuss who gets prosthetics, what they are allowed to do with them, and when do prosthetics make someone no longer a human.</p>
+  <h2>Bioethics</h2>
+  <p>	Bioethics is the ethics of biomedical and biotechnical research and applications of this research. In the case of prosthetics, it takes many forms. A few of the most important of these issues are “could it be abused?” meaning, does it give people an advantage over others? Another issue which I believe is one of the most interesting and most important--the idea of cyborgism. What does it mean to be a cyborg? What does it mean to be a human? Are these so different? Is being a cyborg bad? And lastly, we have to consider ethics of experiments in this field, an idea which incorporates both of the above ideas, along with safety and human rights.</p>
+  <h2>Access</h2>
+  <p>	One field where we must address the question of access is sports. How do we regulate prosthetics? If prosthetics are better than real limbs, it provides incentives for people to get them when they aren’t needed. If this is the case, how do we give the correct people access? How do we ensure that people don’t have “accidents” so they can have an advantage over others in their field?</p>
+  <h2>Fair Competition</h2>
+  <p>And even if people get them because of genuine disabilities, how do we prevent them from abusing them? In an extreme example - in the future, if we replaced a person's body with a robot which possesses superhuman abilities - such as never becoming tired, running faster than humans can, and being stronger than humans currently can be--what does this mean for fair competition? The point of competition in sports is it to be fair and competitive. What is the point if success isn’t based off natural abilities? While the previously mentioned example is an extreme example, there are definitely many disabled players that would like to play in a regular league. For example, Oscar Pistorius is a South African runner who uses J-shaped carbon fiber prosthetics on both his lower legs, which are called “Flex-Foot Cheetah”. In 2007, the International Association of Athletic Federations (IAAF) passed a rule stating that no “technical aids” can be used in regular leagues, effectively banning this runner and many others from regular leagues. More recently, in 2015, the National Collegiate Athletic Association (NCAA) ruled that an incoming disabled runner could run in the regular league, as it was proven he actually had a disadvantage.</p>
+  <p>The issue of prosthetics in sports isn’t one that just must be dealt with by IAAF and the NCAA, but also by bioethicists.</p>
+  <h2>Cyborg</h2>
+  <p>What does it mean to be a cyborg? The term cyborg is defined as “a fictional or hypothetical person whose physical abilities are extended beyond normal human limitations by mechanical elements built into the body.” (Oxford Dictionary, 2018) In this case, it is a hypothetical person, not a fictional one. The idea of cyborg’s were written about commonly in science fiction prior to World War II, starting around 1911. The term “cyborg” wasn’t coined until 1960. While right now it is definitely a stretch to say that prosthetics make one a cyborg, there is potential for this to change in the future as the field advances. If prosthetics are as good as normal limbs, plus they also don’t get tired or potentially have some advanced functionality, this does by definition make them a cyborg as they have “physical abilities extended beyond normal human limitations by mechanical elements built into the body.” (Oxford Dictionary, 2018) But what does this mean? Does this really mean they are no longer human? For the most part, this is an easy answer--no. However, if these prosthetics were abused, and taken to an extreme, it is easy to imagine that this answer could change. But where is the line? Where does a person become a true cyborg in the full sense of the word (meaning they really aren’t truly human anymore)? Why do we care where this line is?  </p>
+  <p>In my mind, being human has a physical and a mental/emotional part, but the important part is the mental. Therefore, as long as one still has a human brain, they are mostly human. However, if they aren’t flesh and blood, they aren’t really a human. It is a struggle to draw this line--where do they stop being flesh and blood and become a cyborg? At the hand? The wrist? The elbow? The arm? The body? When it gets to far, they are a cyborg. </p>
+  <h2>Conclusion</h2>
+  <p>	These are all questions that, as prosthetics advance, the world will have to answer. We, as bioethicists, must determine how to solve these problems. We must answer all of the questions asked in this paper, about access, about fair competition, and about what it means to be human. If ethicists don’t address this issue, and help to limit the market, it could lead to abuse or unfair distribution such as only certain people getting these advanced prosthetics. Ethicists must have a say in this field. </p>
+
+  <script>
+    function showGeneralDropDown() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+      }
+    }
+
+
+  </script>
+
+</body>
+</html>
